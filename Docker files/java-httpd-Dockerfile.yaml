@@ -1,0 +1,8 @@
+# takes latest amazonlinux os
+FROM amazonlinux:2023
+
+RUN dnf install -y httpd
+# port is exposed to 80
+EXPOSE 80
+
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
