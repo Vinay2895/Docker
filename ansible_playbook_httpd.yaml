@@ -20,7 +20,7 @@
         state: started
       tags: service_httpd
 
-    - name: httpd service status
+    - name: httpd service status #to check status
       shell: systemctl status httpd
       register: output_status
       tags: service_httpd
